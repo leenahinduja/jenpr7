@@ -1,13 +1,8 @@
-import java.util.Scanner;
-
 public class PrimeNumberChecker {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Taking input from the user
-        System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
+        // Hardcoded number to check
+        int number = 29;
 
         // Checking if the number is prime
         if (isPrime(number)) {
@@ -15,8 +10,6 @@ public class PrimeNumberChecker {
         } else {
             System.out.println(number + " is not a prime number.");
         }
-
-        scanner.close();
     }
 
     // Method to check if a number is prime
